@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #222222;
+    position: relative;
+    background-color: #f5f5f5;
+    font-size: 16px;
+}
+
+/*Top page*/
+
+header {
+    background: url(/images/logo.jpg) rgb(86 86 86);
+    height: 45vh;
+    text-align: center;
+    font-size: 1.2em;
+    color: #f1f1f1;
+    margin-bottom: 34px;
+    font-family: 'Roboto', sans-serif;;
+    font-weight: 300;
+    border-bottom: 3px solid #FFEA00;
+}
+
+.name {
+    font-family: system-ui;
+    top: 89%;
+    position: relative;
+    left: 39%;
+}
+
+.logo {
+    font-weight: 600;
+    margin-left: 50px;
+    cursor: default;
+}
+
+nav {
+    padding-top: 10px;
+    position: fixed;
+    transition: 0.26s;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+nav.sticky {
+    background: #222222;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    z-index: 1;
+    border-bottom: 0.1em solid #FFEA00;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.menu-option a {
+    display: block;
+    margin: 0px 26px 0 49px;
+    transition: all 0.26s ease;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-option:hover {
+    text-decoration: underline;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FFEA00 0px 0px 20px, #FFEA00 0px 0px 30px, #FFEA00 0px 0px 40px, #FFFF8F 0px 0px 50px, #FFFF8F 0px 0px 75px;
+}
+
+h1 {
+    top: 52%;
+    position: relative;
+    font-weight: 300;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 2.0em;
+    top: 54%;
+    position: relative;
+}
+
+/*main site*/
+
+.main-contrainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 98vw;
+    margin: 0 auto;
+}
+
+.info {
+    font-size: 1.75em;
+}
+
+.contrainers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 70px;
+    width: 25%;
+}
+
+.contrainers img {
+    width: 64px;
+}
+
+.contrainers-info {
+    width: 340px;
+    height: 0;
+    overflow-y: hidden;
+    transition: height 0.2s linear;
+}
+
+.contrainers-info-active {
+    padding: 10px;
+    overflow-y: scroll;
+    height: 220px;
+    border: #333333 2px solid;
+    border-radius: 0.3em;
+}
+
+.contrainers-info::-webkit-scrollbar {
+    width: 12px;
+}
+
+.contrainers-info::-webkit-scrollbar-thumb {
+    background-color: #3f3f3f;
+    border-radius: 20px;
+}
+
+.contrainers-info::-webkit-scrollbar-track {
+    background-color: gray;
+    border-radius: 100px;
+}
+
+main {
+    text-align: center;
+}
+
+.contrainers-button  {
+    position: relative;
+    margin-top: 16px;
+    color: #FFFFFF;
+    background: #333333;
+	border-radius:13px;
+	border:2px solid #FFEA00;
+    cursor:pointer;
+	font-size:1em;
+    width: 160px;
+	padding:16px 0;
+	text-shadow:0px 0px 0px #FFEA00;
+    transition: text-shadow 0.25s ease;
+}
+
+.contrainers-button:hover {
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FFEA00 0px 0px 20px, #FFEA00 0px 0px 30px, #FFEA00 0px 0px 40px, #FFFF8F 0px 0px 50px, #FFFF8F 0px 0px 75px;
+}
+
+.about-us {
+    background: url(/images/electric-gc09848fa6_1920.jpg) rgb(61 61 61);
+    border-bottom: 2px solid #FFEA00;
+    border-top: 3px solid #FFEA00;
+    color: white;
+    font-size: 1.5em;
+    padding: 140px 60px;
+    margin-top: 90px;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 60px 40px 120px 40px;
+}
+
+/*Formularz kontaktowy*/
+
+.contact-us {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 160px;
+}
+
+.contact-us h2 {
+    border-bottom-width: 0.07em;
+    border-bottom-style: solid;
+    border-image: linear-gradient(to right, rgba(255,234,0,1) 0%, transparent) 1;
+}
+
+.contact-us input {
+    width: 500px;
+    height: 40px;
+}
+
+.contact-us textarea {
+    width: 500px;
+    min-height: 120px;
+}
+
+.contact-us label {
+    margin-bottom: 0.2em;
+    margin-top: 1.2em;
+}
+
+.contact-us input::placeholder textarea::placeholder{
+    color: rgba(128, 128, 128, 0.5);
+    font-size: 1em;
+    font-style: italic;
+}
+
+.contact-us .form-button {
+    margin-top: 16px;
+    color:  #333333;
+    background: rgb(255,234,0);
+    background: linear-gradient(45deg, rgba(255,234,0,1) 0%, rgba(242,242,242,1) 100%);
+	border-radius:4px;
+	border:2px solid black;
+    cursor:pointer;
+	font-size:16px;
+	padding:0px 40px;
+    transition: text-shadow 0.2s;
+    width: 240px;
+}
+
+.contact-us .form-button:hover {
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #333333, 0 0 30px #333333, 0 0 40px #333333, 0 0 55px #333333, 0 0 75px #333333;
+}
+
+.sectionE {
+    background: url(/images/wires.jpg) rgb(61 61 61);
+    border-top: 2px solid #FFEA00;
+    height: 35vh;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.section {
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sectionE h3 {
+    top: 40%;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+
+    .contrainers-info {
+        width: 280px;
+    }
+
+    .contrainers img {
+        width: 48px;
+    }
+    .contact-us {
+        padding: 15px 10px;
+    }
+
+    .contact-us input, .contact-us textarea {
+        width: 70vw;
+    }
+
+    .contrainers {
+        font-size: 1.35em;
+    }
+  }
+
+  @media (max-width: 480px) {
+
+    .menu-option a {
+    margin: 0px 12px 0 0;
+    }
+
+    nav {
+        font-size: 1.15em;
+    }
+
+    .logo {
+        margin-left: 30px;
+    }
+
+    .name {
+        left: 0;
+        top: 91%;
+        font-size: 1.15em;
+    }
+
+    .about-us {
+        padding: 100px 16px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    nav {
+        font-size: 1em;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+    .menu-option a {
+        margin: 0px 16px 0 0;
+    }
+
+
+  }
