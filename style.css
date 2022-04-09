@@ -156,7 +156,7 @@ h2 {
     height: 0;
     overflow-y: hidden;
     transform: scaleY(0);
-    transition: transform 0.15s linear;
+    transition: transform 0.45s linear;
 }
 
 .contrainers-info-active {
