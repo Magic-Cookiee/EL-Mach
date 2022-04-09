@@ -5,8 +5,9 @@ for (let i = 0; i < buttonInfo.length; i++) {
     buttonInfo[i].onclick = function() {
         contrainersInfo[i].classList.toggle("contrainers-info-active");
         if (buttonInfo[i].innerHTML === 'Zobacz więcej') {
-            buttonInfo[i].innerHTML = 'Pokaż mniej'
-        } else buttonInfo[i].innerHTML = 'Zobacz więcej'
+            buttonInfo[i].innerHTML = 'Pokaż mniej';
+        } else
+        buttonInfo[i].innerHTML = 'Zobacz więcej';
     }
 }
 

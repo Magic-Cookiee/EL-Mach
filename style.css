@@ -196,7 +196,7 @@ main {
 }
 
 .contrainers-button::after {
-    content: "Zobacz więcej";
+    content: attr(data-content);
     position: absolute;
     top: 16px;
     left: 0;
