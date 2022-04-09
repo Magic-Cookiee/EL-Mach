@@ -47,7 +47,7 @@ nav {
     padding-top: 22px;
     padding-bottom: 22px;
     position: fixed;
-    transition: background 0.6s, transform 0.26s;
+    transition: background .3s, transform .26s;
     width: 100%;
     justify-content: space-between;
     display: flex;
