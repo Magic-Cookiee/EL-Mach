@@ -21,7 +21,7 @@ let sec = document.querySelectorAll(".section");
 
 function activeMenu() {
     let len=sec.length;
-    while(--len && window.scrollY + 1 < sec[len].offsetTop){}
+    while(--len && window.scrollY + 97 < sec[len].offsetTop){}
     navLi.forEach(ltx => ltx.classList.remove("active"));
     navLi[len].classList.add("active");
 }

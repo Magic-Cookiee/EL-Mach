@@ -346,6 +346,10 @@ footer {
     margin: 0px 12px 0 0;
     }
 
+    .menu-option a::after {
+        display: none;
+    }
+
     nav {
         font-size: 1.15em;
     }
