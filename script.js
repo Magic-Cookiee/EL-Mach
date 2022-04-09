@@ -15,3 +15,15 @@ window.addEventListener("scroll", function() {
     let navBar = document.querySelector("nav");
     navBar.classList.toggle("sticky", window.scrollY > 0);
 })
+
+let navLi = document.querySelectorAll(".menu-option");
+let sec = document.querySelectorAll(".section");
+
+function activeMenu() {
+    let len=sec.length;
+    while(--len && window.scrollY + 1 < sec[len].offsetTop){}
+    navLi.forEach(ltx => ltx.classList.remove("active"));
+    navLi[len].classList.add("active");
+}
+activeMenu();
+window.addEventListener("scroll", activeMenu);

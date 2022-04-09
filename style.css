@@ -108,6 +108,10 @@ nav.sticky {
     content: "KONTAKT";
 }
 
+.active a {
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FFEA00 0px 0px 20px, #FFEA00 0px 0px 30px, #FFEA00 0px 0px 40px, #FFFF8F 0px 0px 50px, #FFFF8F 0px 0px 75px;
+}
+
 h1 {
     top: 52%;
     position: relative;
@@ -282,7 +286,7 @@ footer {
 .sectionE {
     background: url(images/wires.jpg) rgb(61 61 61);
     border-top: 2px solid #FFEA00;
-    height: 35vh;
+    height: 75vh;
     text-align: center;
     color: white;
     font-weight: 300;
@@ -301,6 +305,8 @@ footer {
     top: 40%;
     position: relative;
 }
+
+
 
 @media (max-width: 768px) {
     body {
