@@ -19,7 +19,7 @@ body {
 /*Top page*/
 
 header {
-    background: url(/images/logo.jpg) rgb(86 86 86);
+    background: url(images/logo.jpg) rgb(86 86 86);
     height: 45vh;
     text-align: center;
     font-size: 1.2em;
@@ -171,7 +171,7 @@ main {
 }
 
 .about-us {
-    background: url(/images/electric-gc09848fa6_1920.jpg) rgb(61 61 61);
+    background: url(images/electric-gc09848fa6_1920.jpg) rgb(61 61 61);
     border-bottom: 2px solid #FFEA00;
     border-top: 3px solid #FFEA00;
     color: white;
@@ -241,7 +241,7 @@ footer {
 }
 
 .sectionE {
-    background: url(/images/wires.jpg) rgb(61 61 61);
+    background: url(images/wires.jpg) rgb(61 61 61);
     border-top: 2px solid #FFEA00;
     height: 35vh;
     text-align: center;
