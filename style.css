@@ -240,7 +240,7 @@ main {
 footer {
     background-color: #333333;
     color: white;
-    padding: 0 40px 0 40px;
+    padding: 30px 40px 30px 40px;
 }
 
 /*Formularz kontaktowy*/
@@ -303,6 +303,10 @@ footer {
     margin-top: 16px;
 }
 
+.contact-us li:last-of-type {
+    padding-bottom: 60px;
+}
+
 .section {
     background-blend-mode: overlay;
     background-attachment:fixed;
@@ -314,9 +318,9 @@ footer {
 .sectionE {
     background: url(images/el-machlogoz.jpg) bottom / auto no-repeat rgb(43, 42, 41);
     border-top: 2px solid var(--yellow);
+    border-bottom: 2px solid var(--yellow);;
     background-blend-mode: unset;
-    background-attachment: fixed;
-    height: 45vh;
+    height: 35vh;
 }
 
 .sectionE h3 {
