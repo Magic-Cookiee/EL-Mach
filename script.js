@@ -1,8 +1,9 @@
 let buttonInfo = document.getElementsByClassName("contrainers-button");
 let contrainersInfo = document.getElementsByClassName("contrainers-info");
 
+
 for (let i = 0; i < buttonInfo.length; i++) {
-    buttonInfo[i].onclick = function() {
+    buttonInfo[i].onclick = function classToggling() {
         contrainersInfo[i].classList.toggle("contrainers-info-active");
         if (buttonInfo[i].innerHTML === 'Zobacz więcej') {
             buttonInfo[i].innerHTML = 'Pokaż mniej';

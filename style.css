@@ -4,12 +4,19 @@
     box-sizing: border-box;
 }
 
+:root {
+    --yellow: #FFEA00;
+    --textYellowShadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FFEA00 0px 0px 20px, #FFEA00 0px 0px 30px, #FFEA00 0px 0px 40px, #FFFF8F 0px 0px 50px, #FFFF8F 0px 0px 75px;
+}
+
 html {
     scroll-behavior: smooth;
   }
 
 body {
     font-family: 'Nunito', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+
     color: #222222;
     position: relative;
     background-color: #f5f5f5;
@@ -25,9 +32,9 @@ header {
     font-size: 1.2em;
     color: #f1f1f1;
     margin-bottom: 34px;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    border-bottom: 3px solid #FFEA00;
+    border-bottom: 3px solid var(--yellow);
 }
 
 .name {
@@ -57,7 +64,7 @@ nav {
 nav.sticky {
     background: #222222;
     z-index: 1;
-    border-bottom: 0.1em solid #FFEA00;
+    border-bottom: 0.1em solid var(--yellow);
     transform: translateY(0);
 }
 
@@ -84,7 +91,7 @@ nav.sticky {
     width: 100%;
     height: 100%;
     opacity: 0;
-    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FFEA00 0px 0px 20px, #FFEA00 0px 0px 30px, #FFEA00 0px 0px 40px, #FFFF8F 0px 0px 50px, #FFFF8F 0px 0px 75px;
+    text-shadow: var(--textYellowShadow);
     transition: opacity 0.25s ease;
 }
 
@@ -109,7 +116,7 @@ nav.sticky {
 }
 
 .active a {
-    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FFEA00 0px 0px 20px, #FFEA00 0px 0px 30px, #FFEA00 0px 0px 40px, #FFFF8F 0px 0px 50px, #FFFF8F 0px 0px 75px;
+    text-shadow: var(--textYellowShadow);
 }
 
 h1 {
@@ -145,6 +152,7 @@ h2 {
     align-items: center;
     margin: 40px 70px;
     width: 25%;
+    position: relative;
 }
 
 .contrainers img {
@@ -152,8 +160,9 @@ h2 {
 }
 
 .contrainers-info {
+    position: absolute;
     width: 340px;
-    height: 0;
+    height: 220px;
     overflow-y: hidden;
     transform: scaleY(0);
     transition: transform 0.45s linear;
@@ -166,6 +175,7 @@ h2 {
     border: #333333 2px solid;
     border-radius: 0.3em;
     transform: scaleY(1);
+    position: relative;
 }
 
 .contrainers-info::-webkit-scrollbar {
@@ -192,7 +202,7 @@ main {
     color: #FFFFFF;
     background: #333333;
 	border-radius:13px;
-	border:2px solid #FFEA00;
+	border:2px solid var(--yellow);
     cursor:pointer;
 	font-size:1em;
     width: 160px;
@@ -208,7 +218,7 @@ main {
     height: 70px;
     width: 50px;
     position: absolute;
-    background-color: #FFEA00;
+    background-color: var(--yellow);
     transform: skewX(-15deg);
     transition: transform .18s linear;
 }
@@ -219,8 +229,8 @@ main {
 
 .about-us {
     background: url(images/electric-gc09848fa6_1920.jpg) rgb(61 61 61);
-    border-bottom: 2px solid #FFEA00;
-    border-top: 3px solid #FFEA00;
+    border-bottom: 2px solid var(--yellow);
+    border-top: 3px solid var(--yellow);
     color: white;
     font-size: 1.5em;
     padding: 140px 60px;
@@ -230,7 +240,7 @@ main {
 footer {
     background-color: #333333;
     color: white;
-    padding: 60px 40px 120px 40px;
+    padding: 0 40px 0 40px;
 }
 
 /*Formularz kontaktowy*/
@@ -243,6 +253,7 @@ footer {
 }
 
 .contact-us h2 {
+    margin-bottom: 16px;
     border-bottom-width: 0.07em;
     border-bottom-style: solid;
     border-image: linear-gradient(to right, rgba(255,234,0,1) 0%, transparent) 1;
@@ -283,14 +294,13 @@ footer {
     width: 240px;
 }
 
-.sectionE {
-    background: url(images/wires.jpg) rgb(61 61 61);
-    border-top: 2px solid #FFEA00;
-    height: 75vh;
-    text-align: center;
-    color: white;
-    font-weight: 300;
-    font-style: italic;
+.contact-us li {
+    list-style-type: none;
+    padding-top: 0.25em;
+}
+
+.contact-us li:first-of-type {
+    margin-top: 16px;
 }
 
 .section {
@@ -301,40 +311,41 @@ footer {
     background-position: center;
 }
 
+.sectionE {
+    background: url(images/el-machlogoz.jpg) bottom / auto no-repeat rgb(43, 42, 41);
+    border-top: 2px solid var(--yellow);
+    background-blend-mode: unset;
+    background-attachment: fixed;
+    height: 45vh;
+}
+
 .sectionE h3 {
     top: 40%;
     position: relative;
 }
 
-
-
 @media (max-width: 768px) {
     body {
         font-size: 12px;
     }
-
     h1 {
         top: 49%
     }
     h2 {
         top: 48%;
     }
-
     .contrainers-info {
         width: 280px;
     }
-
     .contrainers img {
         width: 48px;
     }
     .contact-us {
         padding: 15px 10px;
     }
-
     .contact-us input, .contact-us textarea {
         width: 70vw;
     }
-
     .contrainers {
         font-size: 1.35em;
     }
@@ -345,27 +356,25 @@ footer {
     .menu-option a {
     margin: 0px 12px 0 0;
     }
-
     .menu-option a::after {
         display: none;
     }
-
     nav {
         font-size: 1.15em;
     }
-
     .logo {
         margin-left: 30px;
     }
-
     .name {
         left: 0;
         top: 91%;
         font-size: 1.15em;
     }
-
     .about-us {
         padding: 100px 16px;
+    }
+    .sectionE {
+        background-size: contain;
     }
   }
 
@@ -373,13 +382,10 @@ footer {
     nav {
         font-size: 1em;
     }
-
     .logo {
         margin-left: 10px;
     }
     .menu-option a {
         margin: 0px 16px 0 0;
     }
-
-
   }
