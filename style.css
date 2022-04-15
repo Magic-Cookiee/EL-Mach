@@ -357,8 +357,14 @@ footer {
   }
 
   @media (max-width: 480px) {
+
+    .section-bottom {
+        position: relative;
+        top: -64px;
+        z-index: -1;
+    }
     footer {
-        padding: 60px 40px 30px 40px;
+        padding: 60px 40px 0 40px;
     }
     .menu-option a {
     margin: 0px 12px 0 0;
@@ -380,8 +386,12 @@ footer {
     .about-us {
         padding: 100px 16px;
     }
+    .contact-us h2 {
+    margin-bottom: -4px;
+    }
     .sectionE {
         background-size: contain;
+        height: 14vh;
     }
   }
 
