@@ -1,12 +1,13 @@
 let buttonInfo = document.getElementsByClassName("contrainers-button");
 let contrainersInfo = document.getElementsByClassName("contrainers-info");
 
-
 for (let i = 0; i < buttonInfo.length; i++) {
     buttonInfo[i].onclick = function classToggling() {
+        contrainersInfo[i].style.position = 'absolute';
         contrainersInfo[i].classList.toggle("contrainers-info-active");
         if (buttonInfo[i].innerHTML === 'Zobacz więcej') {
             buttonInfo[i].innerHTML = 'Pokaż mniej';
+            contrainersInfo[i].style.position = 'relative';
         } else
         buttonInfo[i].innerHTML = 'Zobacz więcej';
     }

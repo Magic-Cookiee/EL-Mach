@@ -175,7 +175,6 @@ h2 {
     border: #333333 2px solid;
     border-radius: 0.3em;
     transform: scaleY(1);
-    position: relative;
 }
 
 .contrainers-info::-webkit-scrollbar {
@@ -320,13 +319,14 @@ footer {
     border-top: 2px solid var(--yellow);
     border-bottom: 2px solid var(--yellow);;
     background-blend-mode: unset;
-    height: 35vh;
+    height: 32vh;
 }
 
 .sectionE h3 {
     top: 40%;
     position: relative;
 }
+
 
 @media (max-width: 768px) {
    
