@@ -329,6 +329,7 @@ footer {
 }
 
 @media (max-width: 768px) {
+   
     body {
         font-size: 12px;
     }
@@ -356,7 +357,9 @@ footer {
   }
 
   @media (max-width: 480px) {
-
+    footer {
+        padding: 60px 40px 30px 40px;
+    }
     .menu-option a {
     margin: 0px 12px 0 0;
     }
