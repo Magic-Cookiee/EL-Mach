@@ -343,6 +343,9 @@ footer {
     h2 {
         top: 48%;
     }
+    .contrainers {
+        margin: 24px 70px;
+    }
     .contrainers-info {
         width: 280px;
     }
