@@ -166,36 +166,15 @@ h2 {
 .contrainers-info {
     position: absolute;
     width: 340px;
-   /* height: 220px;
-    overflow-y: hidden;*/
     transform: scaleY(0);
     transition: transform 0.45s linear;
 }
 
 .contrainers-info-active {
     padding: 10px;
-  /*overflow-y: scroll;
-    height: 220px*/
     border-top: #333333 0.01em solid;
-   /* border-radius: 0.3em;*/
     transform: scaleY(1);
 }
-
-/*
-.contrainers-info::-webkit-scrollbar {
-    width: 12px;
-}
-
-.contrainers-info::-webkit-scrollbar-thumb {
-    background-color: #3f3f3f;
-    border-radius: 20px;
-}
-
-.contrainers-info::-webkit-scrollbar-track {
-    background-color: gray;
-    border-radius: 100px;
-}
-*/
 
 main {
     text-align: center;
@@ -388,6 +367,14 @@ footer {
   }
 
   @media (max-width: 480px) {
+
+    .contrainers-button:hover::after {
+        transform: none;
+    }
+
+    .contrainers-button:hover {
+        text-shadow: none;
+    }
 
     .section-bottom {
         padding-top: 0;
