@@ -310,7 +310,7 @@ footer {
 }
 
 .sectionE {
-    background: url(images/el-machlogo.png) bottom / auto no-repeat rgb(43, 42, 41);
+    background: url(images/elmach-logo.png) bottom / auto no-repeat rgb(43, 42, 41);
     border-top: 2px solid var(--yellow);
     border-bottom: 2px solid var(--yellow);;
     background-blend-mode: unset;
@@ -330,10 +330,10 @@ footer {
 
 @media (max-width: 1366px) {
     body {
-        font-size: 13px;
+        font-size: 14px;
     }
     .about-us {
-        padding: 50px 60px;
+        padding: 90px 60px;
     }
 }
 
