@@ -221,6 +221,8 @@ main {
     text-shadow: var(--textYellowShadow);
 }
 
+/*O nas*/
+
 .about-us {
     background: url(images/electric-gc09848fa6_1920.jpg) rgb(61 61 61);
     border-bottom: 2px solid var(--yellow);
