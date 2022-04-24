@@ -130,6 +130,17 @@ h2 {
     font-size: 2.0em;
     top: 48%;
     position: relative;
+
+}
+
+.number {
+    text-decoration: none;
+    color: white;
+}
+
+.telephone {
+    filter: invert(90%);
+    width: 0.85em;
 }
 
 /*main site*/
