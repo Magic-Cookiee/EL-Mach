@@ -37,18 +37,23 @@ header {
 }
 
 .logo {
-    font-weight: 600;
-    margin-left: 50px;
-    cursor: default;
+    margin-top: 4px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 8em;
 }
 
 nav {
     padding-top: 22px;
-    padding-bottom: 22px;
+    padding-bottom: 12px;
     position: fixed;
     transition: background .3s, transform .26s;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     display: flex;
     transform: translateY(-20%);
 }
@@ -407,7 +412,7 @@ footer {
         font-size: 1.15em;
     }
     .logo {
-        margin-left: 30px;
+        margin-left: 0;
     }
     .name {
         left: 0;
