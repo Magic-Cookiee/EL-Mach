@@ -422,6 +422,9 @@ footer {
     .logo {
         margin-left: 0;
     }
+    .logo img {
+        width: 6em;
+    }
     .name {
         left: 0;
         top: 91%;
@@ -441,9 +444,6 @@ footer {
   @media (max-width: 375px) {
     nav {
         font-size: 1em;
-    }
-    .logo {
-        margin-left: 10px;
     }
     .menu-option a {
         margin: 0px 16px 0 0;
