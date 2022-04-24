@@ -184,7 +184,7 @@ h2 {
 }
 
 .contrainers-info-active {
-    padding: 0 0 10px 0;
+    padding: 0 10px 10px 10px;;
     transform: scaleY(1);
 }
 
@@ -269,11 +269,13 @@ footer {
 .contact-us input {
     width: 500px;
     height: 40px;
+    padding: 6px;
 }
 
 .contact-us textarea {
     width: 500px;
     min-height: 120px;
+    padding: 6px;
 }
 
 .contact-us label {
