@@ -375,6 +375,9 @@ footer {
     h2 {
         top: 48%;
     }
+    .about-us {
+        padding: 90px 50px;
+    }
     .contrainers {
         margin: 24px 70px;
     }
