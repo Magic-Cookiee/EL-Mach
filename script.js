@@ -1,3 +1,4 @@
+//Oferta usług
 let buttonInfo = document.getElementsByClassName("contrainers-button");
 let contrainersInfo = document.getElementsByClassName("contrainers-info");
 
@@ -13,6 +14,8 @@ for (let i = 0; i < buttonInfo.length; i++) {
     }
 }
 
+
+//Aktywne menu poczatek
 window.addEventListener("scroll", function() {
     let navBar = document.querySelector("nav");
     navBar.classList.toggle("sticky", window.scrollY > 0);
@@ -29,3 +32,11 @@ function activeMenu() {
 }
 activeMenu();
 window.addEventListener("scroll", activeMenu);
+
+
+
+//Podziekowanie za przeslanei formularza
+let submitFormButton = document.getElementById('submit-form-button');
+submitFormButton.addEventListener("click", function () {
+    document.getElementById("thnak-you-contact").innerHTML = "<h2>Dziękujemy za przesłaie formularza kontaktowego.</h2>"
+})
